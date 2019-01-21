@@ -6,6 +6,32 @@
 	<artifactId>shortbus</artifactId>
 	<version>0.1.0</version>
 
+	<name>ShortBus</name>
+	<description>ShortBus is an in-process mediator with low-friction API implemented in Java.</description>
+	<url>https://github.com/kazupooot/ShortBus</url>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Kazuhito Higashioka</name>
+			<email>kmhigashioka@gmail.com</email>
+			<organization>kazuhito.io</organization>
+			<organizationUrl>https://kazuhito.io</organizationUrl>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com/kazupooot/ShortBus.git</connection>
+		<developerConnection>scm:git:ssh://github.com:kazupooot/ShortBus.git</developerConnection>
+		<url>github.com/kazupooot/ShortBus</url>
+	</scm>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
