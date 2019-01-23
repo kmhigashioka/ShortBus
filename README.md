@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/kazupooot/ShortBus.svg?branch=master)](https://travis-ci.org/kazupooot/ShortBus)
+
 # ShortBus
 ShortBus is an in-process mediator with low-friction API implemented in Java.
 This project is based from [mhinze/ShortBus](https://github.com/mhinze/ShortBus).
