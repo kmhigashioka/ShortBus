@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = { TestSetup.class, Bar.class })
-public class BasicExample {
+public class BasicExampleTest {
 
 	@Autowired
 	Mediator mediator;
