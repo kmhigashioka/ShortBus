@@ -26,6 +26,7 @@ public class Ping implements Request<String> {
 ```
 Then, create a handler:
 ```
+@Component
 public class Pong implements RequestHandler<Ping, String> {
     @override
     public String handle(Ping request) {
@@ -33,6 +34,7 @@ public class Pong implements RequestHandler<Ping, String> {
     }
 }
 ```
+Make sure to annotate with Spring's `@Component`.
 
 ### Invoking
 To invoke each message:
