@@ -1,11 +1,8 @@
-[![Build Status](https://travis-ci.org/kazupooot/ShortBus.svg?branch=master)](https://travis-ci.org/kazupooot/ShortBus)
-
-# ShortBus
+# ShortBus [![Build Status](https://travis-ci.org/kazupooot/ShortBus.svg?branch=master)](https://travis-ci.org/kazupooot/ShortBus) [![Maven Central](https://img.shields.io/maven-central/v/io.kazuhito/shortbus.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.kazuhito%22%20AND%20a:%22shortbus%22)
 ShortBus is an in-process mediator with low-friction API implemented in Java.
 This project is based from [mhinze/ShortBus](https://github.com/mhinze/ShortBus).
 
 ## Setting Up
-
 ShortBus is dependent on Spring. You'll need to configure a mediator for dependency.
 ```
 @Configuration
