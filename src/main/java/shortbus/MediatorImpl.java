@@ -9,10 +9,18 @@ import java.util.Map.Entry;
 
 import org.springframework.context.ApplicationContext;
 
+/**
+ * Default implementation of Mediator
+ *
+ */
 public class MediatorImpl implements Mediator {
 
 	private ApplicationContext ctx;
 
+	/**
+	 * Initializes a new instance of Mediator
+	 * @param ctx Application context of Spring
+	 */
 	public MediatorImpl(ApplicationContext ctx) {
 		this.ctx = ctx;
 	}
