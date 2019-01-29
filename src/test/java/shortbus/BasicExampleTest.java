@@ -31,4 +31,9 @@ public class BasicExampleTest {
 		assertThat(response.exception.getMessage()).isEqualTo("Handler not found. Did you forget to register this?");
 	}
 
+	@Test
+	public void requestResponseVoid() {
+		Response<Void> response = mediator.request(new FooVoid());
+		assertThat(response.data).isNull();
+	}
 }
