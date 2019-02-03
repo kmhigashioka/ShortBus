@@ -11,7 +11,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
-@ContextConfiguration(classes = { TestSetup.class, Bar.class })
+@ContextConfiguration(classes = { TestSetup.class, Bar.class, Bar1Notification.class, Bar2Notification.class,
+		Bar3Notification.class })
 public class BasicExampleTest {
 
 	@Autowired
@@ -35,5 +36,12 @@ public class BasicExampleTest {
 	public void requestResponseVoid() {
 		Response<Void> response = mediator.request(new FooVoid());
 		assertThat(response.data).isNull();
+	}
+
+	@Test
+	public void sendNotification() {
+		FooNotification notification = new FooNotification();
+		mediator.notify(notification);
+		assertThat(notification.counter).isEqualTo(2);
 	}
 }
