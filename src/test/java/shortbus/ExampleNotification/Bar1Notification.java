@@ -1,4 +1,6 @@
-package shortbus;
+package shortbus.ExampleNotification;
+
+import shortbus.NotificationHandler;
 
 public class Bar1Notification implements NotificationHandler<FooNotification> {
 

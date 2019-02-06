@@ -1,4 +1,6 @@
-package shortbus;
+package shortbus.ExampleRequest;
+
+import shortbus.RequestHandler;
 
 public class Bar implements RequestHandler<Foo, String> {
 

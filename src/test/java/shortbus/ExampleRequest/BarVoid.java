@@ -1,4 +1,6 @@
-package shortbus;
+package shortbus.ExampleRequest;
+
+import shortbus.RequestHandler;
 
 public class BarVoid implements RequestHandler<FooVoid, Void> {
 
