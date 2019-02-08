@@ -21,6 +21,7 @@ ShortBus supports Request/Response messages. This dispatched to a single handler
 The Request/Response interface handles both command and query. First, create a message:
 ```
 public class Ping implements Request<String> {
+
 }
 ```
 Then, create a handler:
@@ -35,7 +36,7 @@ public class Pong implements RequestHandler<Ping, String> {
 ```
 Make sure to annotate with Spring's `@Component`.
 
-### Invoking
+#### Invoking
 To invoke each message:
 ```
 @RestController
@@ -50,4 +51,37 @@ public class PingPongController {
         return response.data; // "Pong!"
     }
 }
+```
+
+### Notification
+First, create your notification message type:
+```
+public class Ping implements Notification {
+    public int counter;
+}
+```
+
+Then create your handlers for your notification:
+```
+@Component
+public class Pong1 implements NotificationHandler<Ping> {
+    @override
+    public void handle(Ping notification) {
+        notification.counter++;
+    }
+}
+
+@Component
+public class Pong2 implements NotificationHandler<Ping> {
+    @override
+    public void handle(Ping notification) {
+        notification.counter++;
+    }
+}
+```
+
+Finally, publish your notification:
+```
+Ping ping = new Ping();
+mediator.notify(ping); // ping.counter = 2
 ```
