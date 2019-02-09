@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.kazuhito</groupId>
 	<artifactId>shortbus</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 
 	<name>ShortBus</name>
 	<description>ShortBus is an in-process mediator with low-friction API implemented in Java.</description>
