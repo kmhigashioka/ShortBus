@@ -17,6 +17,7 @@ public class Response<T> {
 
 	/**
 	 * Return if request has exception
+	 * 
 	 * @return true if exception occured; otherwise false
 	 */
 	public boolean hasException() {

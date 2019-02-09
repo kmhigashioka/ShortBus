@@ -8,7 +8,8 @@ package shortbus;
 public interface NotificationHandler<T> {
 	/**
 	 * Handles all notification
-	 * @param Object parameter of Notification
+	 * 
+	 * @param notification notification parameter
 	 */
 	public void handle(T notification);
 }

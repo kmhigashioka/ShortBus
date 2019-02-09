@@ -9,7 +9,8 @@ package shortbus;
 public interface RequestHandler<T, R> {
 	/**
 	 * Handles a request
-	 * @param Object parameter of Request
+	 * 
+	 * @param request Request parameter
 	 * @return Result type
 	 */
 	public R handle(T request);
